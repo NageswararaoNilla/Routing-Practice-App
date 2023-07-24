@@ -12,6 +12,7 @@ body {
 }
 
 /* Write your CSS code here */
+
 .app-container {
   display: flex;
   justify-content: center;
@@ -19,16 +20,24 @@ body {
   height: 100vh;
 }
 
-.wave-app-container {
-  border: 4px solid #6d396b;
+.responsive-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80vh;
+  border: 4px solid #551e53;
   border-radius: 12px;
-  width: 90%;
-  height: 70vh;
-  padding-top: 25px;
 }
 
-@media screen and (min-width: 768px) {
-  .wave-app-container {
-    width: 80%;
+@media (max-width: 576px) {
+  .responsive-container {
+    width: 85%;
   }
+}
+
+.app-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }

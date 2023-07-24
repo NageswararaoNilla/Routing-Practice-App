@@ -11,14 +11,16 @@ import './App.css'
 
 const App = () => (
   <div className="app-container">
-    <div className="wave-app-container">
+    <div className="responsive-container">
       <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
-        <Route component={NotFound} />
-      </Switch>
+      <div className="app-body">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+          <Route component={NotFound} />
+        </Switch>
+      </div>
     </div>
   </div>
 )
